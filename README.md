@@ -1,3 +1,24 @@
+##########16S rRNA
+
+V4_515F_New	5'-GTGYCAGCMGCCGCGGTAA
+V4_806R_New	5'-GGACTACNVGGGTWTCTAAT
+
+##########ITS
+
+ITS3	5'-GCATCGATGAAGAACGCAGC
+ITS4	5'-TCCTCCGCTTATTGATATGC
+
+########acdSF
+acdSF5	5'-GGCAACAAGMYSCGCAAGCT
+acdSR8	5'-CTGCACSAGSACGCACTTCA
+
+#########nifH
+nifH2	5'-TGYGAYCCNAARGCNGA
+nifH1	5'-ADNGCCATCATYTCNCC
+
+#########AMF 18S
+AMDGR	NS31	5'-TTGGAGGGCAAGTCTGGTGCC
+AMDGR	5'-CCCAACTATCCCTATTAATCAT
 
 ### 18S QIIME-Compatible Database:
 The 18S QIIME-compatible database is tailored for the analysis of eukaryotic microbial communities using the 18S ribosomal RNA (rRNA) gene as a molecular marker. The `reads.qza` file encompasses processed 18S rRNA gene sequence reads, the `taxa.qza` file provides taxonomic annotations linked to these reads, and the `classifier.qza` file includes a trained classifier for accurate taxonomic classification.
