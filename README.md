@@ -1,5 +1,5 @@
 # QIIME-compatible-database
-each file includes reads.fasta, taxa.txt and classifier
+each file includes reads.qza, taxa.qza and classifier.qza
 
 18S 
 https://app.box.com/s/mkra9cc23pa6bcj0k7cq34picypfde2t
