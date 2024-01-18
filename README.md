@@ -24,4 +24,3 @@ Customized for the study of bacterial communities involved in the biogeochemical
 
 [acdS Database Link](https://app.box.com/s/geb3bv6ocde8hsm231muqpdqxopucvom)
 
-Researchers can leverage these gene-specific databases within QIIME for detailed investigations into microbial community composition and diversity within different ecological niches.
