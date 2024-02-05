@@ -1,5 +1,5 @@
 ## Primer Information
-💚🌱
+
 ### #16S
 
 - **V4_515F_New:** 5'-GTGYCAGCMGCCGCGGTAA
