@@ -1,6 +1,5 @@
 ## Primer Information
-![Human Rights Logo](https://www.google.com/imgres?imgurl=https%3A%2F%2Fgreenheart.org%2Fwp-content%2Fuploads%2Fhr.png)
-
+💚🌱
 ### #16S
 
 - **V4_515F_New:** 5'-GTGYCAGCMGCCGCGGTAA
