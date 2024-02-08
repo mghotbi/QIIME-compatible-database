@@ -82,4 +82,18 @@ Customized for studying bacterial communities involved in the biogeochemical cyc
 [Alternative Link](https://drive.google.com/drive/folders/1mFtpKfmqiMfKh9q7N55LUiTD_w6kD7bN?usp=sharing)
 
 
+## Eukaryotes QIIME-Compatible Database
+
+Customized for analyzing eukaryotic communities, the Eukaryotes QIIME-compatible database utilizes various gene markers such as 18S rRNA. Key files included in this database are:
+
+- `reads.qza`: Processed sequence reads for eukaryotic genes
+- `taxa.qza`: Taxonomic annotations associated with the sequence reads
+- `classifier.qza`: Trained classifier for precise taxonomic classification of eukaryotic sequences
+
+**Download Eukaryotes Database:**
+- [Download from Box](https://app.box.com/s/15az6wudemhq1sz1uyjg1lsb346sd4ts)
+- [Download from Google Drive](https://drive.google.com/drive/folders/14QSEPlW68vLewDJ6PRqApr4uKmBiZ15V?usp=sharing)
+
+
+
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/mghotbi/QIIME-compatible-database">QIIME2-Compatible-library </a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/mitra-ghotbi-78b34030/">Mitra & Marjan Ghotbi</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
