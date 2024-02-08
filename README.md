@@ -48,7 +48,7 @@ Designed for exploring bacterial and archaeal communities, the 16S QIIME-compati
 [Download 16S Database](https://app.box.com/s/445pwsz06zvh9y7kpepp1phydu3e5heg)
 [Alternative Link](https://drive.google.com/drive/folders/1mV6ijpE0wCZHfDMdqlZ0U0keDJSMQsgA?usp=sharing)
 
-## ITS QIIME-Compatible Database V8
+## ITS QIIME-Compatible Database Unite-V8
 
 Tailored for analyzing fungal communities, the ITS QIIME-compatible database employs the Internal Transcribed Spacer (ITS) region as a gene marker. Key files include:
 
