@@ -92,7 +92,7 @@ Customized for analyzing eukaryotic communities, the Eukaryotes QIIME-compatible
 
 **Download Eukaryotes Database:**
  [Download from Box](https://app.box.com/s/15az6wudemhq1sz1uyjg1lsb346sd4ts)
- [Download from Google Drive](https://drive.google.com/drive/folders/14QSEPlW68vLewDJ6PRqApr4uKmBiZ15V?usp=sharing)
+ [Alternative Link](https://drive.google.com/drive/folders/14QSEPlW68vLewDJ6PRqApr4uKmBiZ15V?usp=sharing)
 
 
 
