@@ -78,7 +78,7 @@ Customized for studying bacterial communities involved in the biogeochemical cyc
 - `taxa.qza`: Taxonomic annotations for the reads
 - `classifier.qza`: Trained classifier for accurate taxonomic classification
 
-[Download acdS Database](https://app.box.com/s/geb3bv6ocde8hsm231muqpdqxopucvom)
+[Download acdS Database](https://app.box.com/s/geb3bv6ocde8hsm231muqpdqxopucvom) | 
 [Alternative Link](https://drive.google.com/drive/folders/1mFtpKfmqiMfKh9q7N55LUiTD_w6kD7bN?usp=sharing)
 
 ## Eukaryota QIIME-Compatible Database
