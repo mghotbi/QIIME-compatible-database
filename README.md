@@ -81,18 +81,15 @@ Customized for studying bacterial communities involved in the biogeochemical cyc
 [Download acdS Database](https://app.box.com/s/geb3bv6ocde8hsm231muqpdqxopucvom)
 [Alternative Link](https://drive.google.com/drive/folders/1mFtpKfmqiMfKh9q7N55LUiTD_w6kD7bN?usp=sharing)
 
+## Eukaryota QIIME-Compatible Database
 
-## Eukaryotes QIIME-Compatible Database
-
-Customized for analyzing eukaryotic communities, the Eukaryotes QIIME-compatible database utilizes various gene markers such as ITS, and 18S rRNA. Key files included in this database are:
+Customized for analyzing eukaryotic communities, the Eukaryota QIIME-compatible database utilizes various gene markers such as ITS & 18S rRNA. Key files included in this database are:
 
 - `reads.qza`: Processed sequence reads for eukaryotic genes
 - `taxa.qza`: Taxonomic annotations associated with the sequence reads
 - `classifier.qza`: Trained classifier for precise taxonomic classification of eukaryotic sequences
 
-**Download Eukaryotes Database:**
- [Download from Box](https://app.box.com/s/15az6wudemhq1sz1uyjg1lsb346sd4ts)
- [Alternative Link](https://drive.google.com/drive/folders/14QSEPlW68vLewDJ6PRqApr4uKmBiZ15V?usp=sharing)
+[Download Eukaryota Database](https://app.box.com/s/15az6wudemhq1sz1uyjg1lsb346sd4ts) | [Alternative Link](https://drive.google.com/drive/folders/14QSEPlW68vLewDJ6PRqApr4uKmBiZ15V?usp=sharing)
 
 
 
