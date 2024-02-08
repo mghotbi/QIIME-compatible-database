@@ -34,7 +34,7 @@ The 18S QIIME-compatible database is tailored for analyzing eukaryotic microbial
 - `taxa.qza`: Taxonomic annotations linked to the reads
 - `classifier.qza`: Trained classifier for accurate taxonomic classification
 
-[Download 18S Database](https://app.box.com/s/mkra9cc23pa6bcj0k7cq34picypfde2t)
+[Download 18S Database](https://app.box.com/s/mkra9cc23pa6bcj0k7cq34picypfde2t) | 
 [Alternative Link](https://drive.google.com/drive/folders/1mMpcjvaqcLxvewOjZ0oA5l5-KhydbgQR?usp=sharing)
 
 ## 16S QIIME-Compatible Database
@@ -45,7 +45,7 @@ Designed for exploring bacterial and archaeal communities, the 16S QIIME-compati
 - `taxa.qza`: Taxonomic annotations for the reads
 - `classifier.qza`: Trained classifier for precise taxonomic assignments
 
-[Download 16S Database](https://app.box.com/s/445pwsz06zvh9y7kpepp1phydu3e5heg)
+[Download 16S Database](https://app.box.com/s/445pwsz06zvh9y7kpepp1phydu3e5heg) | 
 [Alternative Link](https://drive.google.com/drive/folders/1mV6ijpE0wCZHfDMdqlZ0U0keDJSMQsgA?usp=sharing)
 
 ## ITS QIIME-Compatible Database Unite-V8
@@ -56,7 +56,7 @@ Tailored for analyzing fungal communities, the ITS QIIME-compatible database emp
 - `taxa.qza`: Taxonomic information associated with the reads
 - `classifier.qza`: Trained classifier for accurate taxonomic classification
 
-[Download ITS Database](https://app.box.com/s/xvrswqinynyx740cjw9h6vo87twtbutn)
+[Download ITS Database](https://app.box.com/s/xvrswqinynyx740cjw9h6vo87twtbutn) | 
 [Alternative Link](https://drive.google.com/drive/folders/1mE5m4STDY34f5-wPWGFw-D1cwMG-rLPN?usp=sharing)
 
 ## nifH QIIME-Compatible Database
@@ -67,7 +67,7 @@ Focused on nitrogen-fixing bacteria, the nifH QIIME-compatible database utilizes
 - `taxa.qza`: Taxonomic annotations for the reads
 - `classifier.qza`: Trained classifier for precise taxonomic assignments
 
-[Download nifH Database](https://app.box.com/s/vg2jgh6b9beo1zlf07z8ijhr6mx13k2m)
+[Download nifH Database](https://app.box.com/s/vg2jgh6b9beo1zlf07z8ijhr6mx13k2m) | 
 [Alternative Link](https://drive.google.com/drive/folders/1mCp57YTcM17VhVGexGtV4d0C19W_bGqm?usp=sharing)
 
 ## acdS QIIME-Compatible Database
