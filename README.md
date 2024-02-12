@@ -54,6 +54,17 @@ Tailored for analyzing fungal communities, the ITS QIIME-compatible database emp
 [Download ITS Database](https://app.box.com/s/xvrswqinynyx740cjw9h6vo87twtbutn) | 
 [Alternative Link](https://drive.google.com/drive/folders/1mE5m4STDY34f5-wPWGFw-D1cwMG-rLPN?usp=sharing)
 
+## ITS QIIME-Compatible Database Unite-V9
+
+Tailored for analyzing fungal communities, the ITS QIIME-compatible database employs the Internal Transcribed Spacer (ITS) region as a gene marker. Key files include:
+
+- `reads.qza`: Processed ITS sequence reads
+- `taxa.qza`: Taxonomic information associated with the reads
+- `classifier.qza`: Trained classifier for accurate taxonomic classification
+
+[Download ITS Database] (https://app.box.com/s/fgqc1kc3feybaffjthfkb13ipkjwailt)
+[Alternative Link] (https://drive.google.com/drive/folders/14Kk_Z7t0W6uEWbc_q2pEVEnONFvU-m9e?usp=sharing)
+  
 ## nifH QIIME-Compatible Database
 
 Focused on nitrogen-fixing bacteria, the nifH QIIME-compatible database utilizes the nitrogenase reductase (nifH) gene as a marker. Key files include:
