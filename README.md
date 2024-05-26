@@ -1,29 +1,32 @@
 ## Primer Information
 
-### #16S
+### 16S
 - **V4_515F_New:** 5'-GTGYCAGCMGCCGCGGTAA
 - **V4_806R_New:** 5'-GGACTACNVGGGTWTCTAAT
 
-### #ITS2
+### ITS2
 - **ITS3:** 5'-GCATCGATGAAGAACGCAGC
 - **ITS4:** 5'-TCCTCCGCTTATTGATATGC
 
-### #ITS1
+### ITS1
 - **ITS1:** 5'-GAACCWGCGGARGGATCA
 - **ITS2:** 5'-GCTGCGTTCTTCATCGATGC
 
-### #acdSF
+### acdSF
 - **acdSF5:** 5'-GGCAACAAGMYSCGCAAGCT
 - **acdSR8:** 5'-CTGCACSAGSACGCACTTCA
 
-### #nifH
+### nifH
 - **nifH2:** 5'-TGYGAYCCNAARGCNGA
 - **nifH1:** 5'-ADNGCCATCATYTCNCC
 
-### #AMF 18S
+### AMF 18S
 - **AMDGR_NS31:** 5'-TTGGAGGGCAAGTCTGGTGCC
 - **AMDGR:** 5'-CCCAACTATCCCTATTAATCAT
 
+### nosZ
+- **nosZ-F:** 5'-[Primer Sequence]
+- **nosZ-R:** 5'-[Primer Sequence]
 
 ## 18S QIIME-Compatible Database
 
@@ -65,7 +68,6 @@ Designed for analyzing fungal communities, the ITS QIIME-compatible databases ut
 
 [Download UNITE-V9 ITS Database](https://app.box.com/s/fgqc1kc3feybaffjthfkb13ipkjwailt) | [Alternative Link](https://drive.google.com/drive/folders/14Kk_Z7t0W6uEWbc_q2pEVEnONFvU-m9e?usp=sharing)
 
-
 ## nifH QIIME-Compatible Database
 
 Focused on nitrogen-fixing bacteria, the nifH QIIME-compatible database utilizes the nitrogenase reductase (nifH) gene as a marker. Key files include:
@@ -98,6 +100,17 @@ Customized for analyzing eukaryotic communities, the Eukaryota QIIME-compatible 
 
 [Download Eukaryota Database](https://app.box.com/s/15az6wudemhq1sz1uyjg1lsb346sd4ts) | [Alternative Link](https://drive.google.com/drive/folders/14QSEPlW68vLewDJ6PRqApr4uKmBiZ15V?usp=sharing)
 
+## nosZ QIIME-Compatible Database
 
+The nosZ QIIME-compatible database focuses on denitrifying bacteria, utilizing the nitrous oxide reductase (nosZ) gene as a marker. Key files include:
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/mghotbi/QIIME-compatible-database">QIIME2-Compatible-library </a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/mitra-ghotbi-78b34030/">Mitra & Marjan Ghotbi</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+- `reads.qza`: Processed nosZ gene sequence reads
+- `taxa.qza`: Taxonomic annotations for the reads
+- `classifier.qza`: Trained classifier for precise taxonomic assignments
+
+[Download nosZ Database](https://app.box.com/s/yourboxlinkhere) | 
+[Alternative Link](https://drive.google.com/drive/folders/yourgoogledrivlinkhere?usp=sharing)
+
+---
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/mghotbi/QIIME-compatible-database">QIIME2-Compatible-library</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/mitra-ghotbi-78b34030/">Mitra & Marjan Ghotbi</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
