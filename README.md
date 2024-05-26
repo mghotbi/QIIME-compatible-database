@@ -108,8 +108,8 @@ The nosZ QIIME-compatible database focuses on denitrifying bacteria, utilizing t
 - `taxa.qza`: Taxonomic annotations for the reads
 - `classifier.qza`: Trained classifier for precise taxonomic assignments
 
-[Download nosZ Database](https://app.box.com/s/yourboxlinkhere) | 
-[Alternative Link](https://drive.google.com/drive/folders/yourgoogledrivlinkhere?usp=sharing)
+[Download nosZ Database](https://app.box.com/s/vuvu76p9gv29m46q45nx8maoj5j3fvfs) | 
+[Alternative Link](https://drive.google.com/drive/folders/12DSESzzPDJYWqcqQDXH0iQxF4OZOezli?usp=drive_link)
 
 ---
 
