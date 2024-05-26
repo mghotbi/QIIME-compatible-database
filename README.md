@@ -30,9 +30,10 @@
 - **nosZ-F:** 5'-[Primer Sequence]
 - **nosZ-R:** 5'-[Primer Sequence]
 
-## Database Descriptions
+---
 
-### 18S QIIME-Compatible Database
+## 18S QIIME-Compatible Database
+
 The 18S QIIME-compatible database is designed for analyzing eukaryotic microbial communities using the 18S ribosomal RNA (rRNA) gene as a molecular marker. The database includes:
 - **reads.qza**: Processed 18S rRNA gene sequence reads
 - **taxa.qza**: Taxonomic annotations linked to the reads
@@ -40,7 +41,10 @@ The 18S QIIME-compatible database is designed for analyzing eukaryotic microbial
 
 [Download 18S Database](https://app.box.com/s/mkra9cc23pa6bcj0k7cq34picypfde2t) | [Alternative Link](https://drive.google.com/drive/folders/1mMpcjvaqcLxvewOjZ0oA5l5-KhydbgQR?usp=sharing)
 
-### 16S QIIME-Compatible Database
+---
+
+## 16S QIIME-Compatible Database
+
 The 16S QIIME-compatible database is tailored for exploring bacterial and archaeal communities, utilizing the 16S ribosomal RNA (rRNA) gene as a marker. The database includes:
 - **reads.qza**: Processed sequence reads
 - **taxa.qza**: Taxonomic annotations for the reads
@@ -48,24 +52,30 @@ The 16S QIIME-compatible database is tailored for exploring bacterial and archae
 
 [Download 16S Database](https://app.box.com/s/445pwsz06zvh9y7kpepp1phydu3e5heg) | [Alternative Link](https://drive.google.com/drive/folders/1mV6ijpE0wCZHfDMdqlZ0U0keDJSMQsgA?usp=sharing)
 
-### ITS QIIME-Compatible Database
+---
+
+## ITS QIIME-Compatible Database
+
 The ITS QIIME-compatible database is developed for analyzing fungal communities using the Internal Transcribed Spacer (ITS) region as a gene marker. The database includes:
 
-#### UNITE-V8
+### UNITE-V8
 - **reads.qza**: Processed ITS sequence reads
 - **taxa.qza**: Taxonomic information associated with the reads
 - **classifier.qza**: Trained classifier for accurate taxonomic classification
 
 [Download UNITE-V8 ITS Database](https://app.box.com/s/fgqc1kc3feybaffjthfkb13ipkjwailt) | [Alternative Link](https://drive.google.com/drive/folders/14Kk_Z7t0W6uEWbc_q2pEVEnONFvU-m9e?usp=sharing)
 
-#### UNITE-V9
+### UNITE-V9
 - **reads.qza**: Processed ITS sequence reads
 - **taxa.qza**: Taxonomic information associated with the reads
 - **classifier.qza**: Trained classifier for accurate taxonomic classification
 
 [Download UNITE-V9 ITS Database](https://app.box.com/s/fgqc1kc3feybaffjthfkb13ipkjwailt) | [Alternative Link](https://drive.google.com/drive/folders/14Kk_Z7t0W6uEWbc_q2pEVEnONFvU-m9e?usp=sharing)
 
-### nifH QIIME-Compatible Database
+---
+
+## nifH QIIME-Compatible Database
+
 The nifH QIIME-compatible database focuses on nitrogen-fixing bacteria, utilizing the nitrogenase reductase (nifH) gene as a marker. The database includes:
 - **reads.qza**: Processed nifH gene sequence reads
 - **taxa.qza**: Taxonomic annotations for the reads
@@ -73,7 +83,10 @@ The nifH QIIME-compatible database focuses on nitrogen-fixing bacteria, utilizin
 
 [Download nifH Database](https://app.box.com/s/vg2jgh6b9beo1zlf07z8ijhr6mx13k2m) | [Alternative Link](https://drive.google.com/drive/folders/1mCp57YTcM17VhVGexGtV4d0C19W_bGqm?usp=sharing)
 
-### acdS QIIME-Compatible Database
+---
+
+## acdS QIIME-Compatible Database
+
 The acdS QIIME-compatible database is customized for studying bacterial communities involved in the biogeochemical cycling of ethylene, employing the 1-aminocyclopropane-1-carboxylate deaminase (acdS) gene as a marker. The database includes:
 - **reads.qza**: Processed acdS gene sequence reads
 - **taxa.qza**: Taxonomic annotations for the reads
@@ -81,7 +94,10 @@ The acdS QIIME-compatible database is customized for studying bacterial communit
 
 [Download acdS Database](https://app.box.com/s/geb3bv6ocde8hsm231muqpdqxopucvom) | [Alternative Link](https://drive.google.com/drive/folders/1mFtpKfmqiMfKh9q7N55LUiTD_w6kD7bN?usp=sharing)
 
-### Eukaryota QIIME-Compatible Database
+---
+
+## Eukaryota QIIME-Compatible Database
+
 The Eukaryota QIIME-compatible database is tailored for analyzing eukaryotic communities, utilizing various gene markers such as ITS & 18S rRNA. The database includes:
 - **reads.qza**: Processed sequence reads for eukaryotic genes
 - **taxa.qza**: Taxonomic annotations associated with the sequence reads
@@ -89,7 +105,10 @@ The Eukaryota QIIME-compatible database is tailored for analyzing eukaryotic com
 
 [Download Eukaryota Database](https://app.box.com/s/15az6wudemhq1sz1uyjg1lsb346sd4ts) | [Alternative Link](https://drive.google.com/drive/folders/14QSEPlW68vLewDJ6PRqApr4uKmBiZ15V?usp=sharing)
 
-### nosZ QIIME-Compatible Database
+---
+
+## nosZ QIIME-Compatible Database
+
 The nosZ QIIME-compatible database focuses on denitrifying bacteria, utilizing the nitrous oxide reductase (nosZ) gene as a marker. The database includes:
 - **reads.qza**: Processed nosZ gene sequence reads
 - **taxa.qza**: Taxonomic annotations for the reads
