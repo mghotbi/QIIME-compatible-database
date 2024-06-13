@@ -5,7 +5,6 @@
 
 ---
 
-## Primer Information
 
 | **16S** | **ITS2** | **ITS1** | **acdS** | **nifH** | **AMF 18S** | **nosZ** |
 | --- | --- | --- | --- | --- | --- | --- |
