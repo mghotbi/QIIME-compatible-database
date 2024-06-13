@@ -2,33 +2,16 @@
 
 ## Primer Information
 
-### 16S
-- **V4_515F_New:** 5'-GTGYCAGCMGCCGCGGTAA
-- **V4_806R_New:** 5'-GGACTACNVGGGTWTCTAAT
+| **16S**             | **ITS2**                     | **ITS1**                     | **acdS**                        |
+|---------------------|------------------------------|------------------------------|---------------------------------|
+| **V4_515F_New:**    | **ITS3:** 5'-GCATCGATGAAGAACGCAGC | **ITS1:** 5'-GAACCWGCGGARGGATCA | **acdSF5:** 5'-GGCAACAAGMYSCGCAAGCT |
+| 5'-GTGYCAGCMGCCGCGGTAA | **ITS4:** 5'-TCCTCCGCTTATTGATATGC | **ITS2:** 5'-GCTGCGTTCTTCATCGATGC | **acdSR8:** 5'-CTGCACSAGSACGCACTTCA |
 
-### ITS2
-- **ITS3:** 5'-GCATCGATGAAGAACGCAGC
-- **ITS4:** 5'-TCCTCCGCTTATTGATATGC
+| **nifH**                | **AMF 18S**                          | **nosZ**              |                                 |
+|-------------------------|--------------------------------------|-----------------------|---------------------------------|
+| **nifH2:** 5'-TGYGAYCCNAARGCNGA | **AMDGR_NS31:** 5'-TTGGAGGGCAAGTCTGGTGCC | **nosZ-F:** 5'-[Primer Sequence] |                                 |
+| **nifH1:** 5'-ADNGCCATCATYTCNCC | **AMDGR:** 5'-CCCAACTATCCCTATTAATCAT | **nosZ-R:** 5'-[Primer Sequence] |                                 |
 
-### ITS1
-- **ITS1:** 5'-GAACCWGCGGARGGATCA
-- **ITS2:** 5'-GCTGCGTTCTTCATCGATGC
-
-### acdS
-- **acdSF5:** 5'-GGCAACAAGMYSCGCAAGCT
-- **acdSR8:** 5'-CTGCACSAGSACGCACTTCA
-
-### nifH
-- **nifH2:** 5'-TGYGAYCCNAARGCNGA
-- **nifH1:** 5'-ADNGCCATCATYTCNCC
-
-### AMF 18S
-- **AMDGR_NS31:** 5'-TTGGAGGGCAAGTCTGGTGCC
-- **AMDGR:** 5'-CCCAACTATCCCTATTAATCAT
-
-### nosZ
-- **nosZ-F:** 5'-[Primer Sequence]
-- **nosZ-R:** 5'-[Primer Sequence]
 
 ---
 
