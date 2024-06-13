@@ -2,18 +2,18 @@
 
 ## Primer Information
 
-| **16S**             | **ITS2**                     | **ITS1**                     | **acdS**                        |
-|---------------------|------------------------------|------------------------------|---------------------------------|
-| **V4_515F_New:**    | **ITS3:** 5'-GCATCGATGAAGAACGCAGC | **ITS1:** 5'-GAACCWGCGGARGGATCA | **acdSF5:** 5'-GGCAACAAGMYSCGCAAGCT |
-| 5'-GTGYCAGCMGCCGCGGTAA | **ITS4:** 5'-TCCTCCGCTTATTGATATGC | **ITS2:** 5'-GCTGCGTTCTTCATCGATGC | **acdSR8:** 5'-CTGCACSAGSACGCACTTCA |
 
-| **nifH**                | **AMF 18S**                          | **nosZ**              |                                 |
-|-------------------------|--------------------------------------|-----------------------|---------------------------------|
-| **nifH2:** 5'-TGYGAYCCNAARGCNGA | **AMDGR_NS31:** 5'-TTGGAGGGCAAGTCTGGTGCC | **nosZ-F:** 5'-[Primer Sequence] |                                 |
-| **nifH1:** 5'-ADNGCCATCATYTCNCC | **AMDGR:** 5'-CCCAACTATCCCTATTAATCAT | **nosZ-R:** 5'-[Primer Sequence] |                                 |
+---
+
+## Primer Information
+
+| **16S** | **ITS2** | **ITS1** | **acdS** | **nifH** | **AMF 18S** | **nosZ** |
+| --- | --- | --- | --- | --- | --- | --- |
+| **V4_515F_New:** 5'-GTGYCAGCMGCCGCGGTAA<br>**V4_806R_New:** 5'-GGACTACNVGGGTWTCTAAT | **ITS3:** 5'-GCATCGATGAAGAACGCAGC<br>**ITS4:** 5'-TCCTCCGCTTATTGATATGC | **ITS1:** 5'-GAACCWGCGGARGGATCA<br>**ITS2:** 5'-GCTGCGTTCTTCATCGATGC | **acdSF5:** 5'-GGCAACAAGMYSCGCAAGCT<br>**acdSR8:** 5'-CTGCACSAGSACGCACTTCA | **nifH2:** 5'-TGYGAYCCNAARGCNGA<br>**nifH1:** 5'-ADNGCCATCATYTCNCC | **AMDGR_NS31:** 5'-TTGGAGGGCAAGTCTGGTGCC<br>**AMDGR:** 5'-CCCAACTATCCCTATTAATCAT | **nosZ1mod_f:** 5'-WCSYTSTTCMTSGAYAGCCAG<br>**nosZmod_R:** 5'-ATRTCGATSARCTGVKCRTTYTC |
 
 
 ---
+
 
 ## 18S QIIME-Compatible Database
 
