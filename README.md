@@ -40,12 +40,12 @@ The 16S QIIME-compatible database is tailored for exploring bacterial and archae
 
 The ITS QIIME-compatible database is developed for analyzing fungal communities using the Internal Transcribed Spacer (ITS) region as a gene marker. The database includes:
 
-### UNITE-V8
+### UNITE-V10
 - **reads.qza**: Processed ITS sequence reads
 - **taxa.qza**: Taxonomic information associated with the reads
 - **classifier.qza**: Trained classifier for accurate taxonomic classification
 
-[Download UNITE-V8 ITS Database](https://app.box.com/s/fgqc1kc3feybaffjthfkb13ipkjwailt) | [Alternative Link](https://drive.google.com/drive/folders/14Kk_Z7t0W6uEWbc_q2pEVEnONFvU-m9e?usp=sharing)
+[Download UNITE-V10 ITS Database](https://app.box.com/s/09t2ijoxpvbrcavu2r88rzsqe4stwo3w) | [Alternative Link](https://drive.google.com/drive/folders/1OEtk7em_1Z7yhWSpW_xjsWroO8lnasg2?usp=sharing)
 
 ### UNITE-V9
 - **reads.qza**: Processed ITS sequence reads
