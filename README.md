@@ -1,4 +1,4 @@
-# 🌱 QIIME-Compatible Databases 🧬
+# QIIME-Compatible Databases 🧬
 
 <p align="center">
   <a href="#choosing-primers-for-soil-and-plant-samples"><img alt="Focus: soil–plant–microbe" src="https://img.shields.io/badge/Focus-Soil%20%E2%80%A2%20Plant%20%E2%80%A2%20Microbe-8FBC8F?style=flat-square"></a>
