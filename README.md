@@ -189,7 +189,7 @@ These entries retain the additional marker information from the original README.
 
 ## 🧬 Hackflex and DNA extraction for shotgun metagenomics
 
-**Hackflex is a sequencing-library preparation method, not a DNA-extraction method.** Extraction releases and purifies DNA from the sample; library preparation converts that DNA into adapter-bearing fragments that can be sequenced. Shotgun metagenomics (sequencing DNA across the extracted community) differs from sequencing a targeted 16S or ITS amplicon.
+**Hackflex is a sequencing-library preparation method.** Extraction releases and purifies DNA from the sample; library preparation converts that DNA into adapter-bearing fragments that can be sequenced. Shotgun metagenomics (sequencing DNA across the extracted community) differs from sequencing a targeted 16S or ITS amplicon.
 
 ### Origin and published evidence
 
