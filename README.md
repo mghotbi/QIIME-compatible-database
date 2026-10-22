@@ -483,7 +483,7 @@ The Eukaryota QIIME-compatible database is tailored for analyzing eukaryotic com
 - **taxa.qza**: Taxonomic annotations associated with the sequence reads
 - **classifier.qza**: Trained classifier for precise taxonomic classification of eukaryotic sequences
 
-[Download Eukaryota Database](https://app.box.com/s/15az6wudemhq1sz1uyjg1lsb346sd4ts) | [Alternative Link](https://drive.google.com/drive/folders/14QSEPlW68vLewDJ6PRqApr4uKmBiZ15V?usp=sharing)
+[Download Eukaryota Database](https://app.box.com/s/15az6wudemhq1sz1uyjg1lsb346sd4ts) | [Alternative Link] (https://drive.google.com/drive/folders/14QSEPlW68vLewDJ6PRqApr4uKmBiZ15V?usp=sharing)
 
 ---
 
