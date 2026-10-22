@@ -10,8 +10,7 @@
   <a href="https://creativecommons.org/licenses/by/4.0/"><img alt="License: CC BY 4.0" src="https://img.shields.io/badge/License-CC%20BY%204.0-D6D6E7?style=flat-square"></a>
 </p>
 
-<p align="center"><b>🌿 Soil · 🌱 Plants · 🦠 Microbes · 🍄 Fungi</b></p>
-
+ 
 Reference resources for marker-gene analysis, with a curated primer catalogue for soil–plant–microbe research.
 
 ## Contents
