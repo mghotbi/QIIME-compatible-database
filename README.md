@@ -10,10 +10,16 @@
   <a href="https://creativecommons.org/licenses/by/4.0/"><img alt="License: CC BY 4.0" src="https://img.shields.io/badge/License-CC%20BY%204.0-D6D6E7?style=flat-square"></a>
 </p>
 
- 
+ <p align="center">
+  <a href="https://earthmicrobiome.ucsd.edu/"><img alt="Earth Microbiome Project: website" src="https://img.shields.io/badge/Earth%20Microbiome%20Project-Explore-7FB685?style=flat-square"></a>
+  <a href="https://earthmicrobiome.ucsd.edu/protocols-and-standards/16s/"><img alt="EMP: 16S protocol reference" src="https://img.shields.io/badge/EMP-16S%20protocol-89CFF0?style=flat-square"></a>
+  <a href="https://earthmicrobiome.ucsd.edu/protocols-and-standards/its/"><img alt="EMP: ITS1 protocol reference" src="https://img.shields.io/badge/EMP-ITS1%20protocol-C3B1E1?style=flat-square"></a>
+</p>
+
+
 Reference resources for marker-gene analysis, with a curated primer catalogue for soil–plant–microbe research.
 
-## Contents
+## 🧭 Contents
 
 - [Scope and sequence conventions](#scope-and-sequence-conventions)
 - [16S rRNA gene primers](#16s-rrna-gene-primers)
