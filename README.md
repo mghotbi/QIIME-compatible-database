@@ -206,7 +206,7 @@ These entries retain the additional marker information from the original README.
 
 <a id="hackflex-and-dna-extraction-for-shotgun-metagenomics"></a>
 
-## 🧬 Hackflex and DNA extraction for shotgun metagenomics
+## Hackflex and DNA extraction for shotgun metagenomics
 
 **Hackflex is a sequencing-library preparation method.** Extraction releases and purifies DNA from the sample; library preparation converts that DNA into adapter-bearing fragments that can be sequenced. Shotgun metagenomics (sequencing DNA across the extracted community) differs from sequencing a targeted 16S or ITS amplicon.
 
@@ -310,7 +310,7 @@ The links below point to **external reference resources and their official docum
 
 These are starting combinations, not a requirement to install every database. A **MAG** is a metagenome-assembled genome; a **contig** is a contiguous assembled DNA sequence; an **HMM** is a statistical sequence-family model used to detect related proteins.
 
-### 1. Taxonomy and genome references 🦠
+### 1. Taxonomy and genome references 
 
 | Resource and official link | What it contains / typical input | Software relationship and limitations |
 | --- | --- | --- |
@@ -321,7 +321,7 @@ These are starting combinations, not a requirement to install every database. A 
 
 **NCBI and GTDB names can differ.** Keep the taxonomy source and release attached to every result. Do not merge tables by species-name strings alone. Reference-dependent profiles also omit or incompletely resolve organisms lacking suitable reference representation; an unclassified read is not evidence that no organism was present.
 
-### 2. General functions and pathways 🧬
+### 2. General functions and pathways 
 
 | Resource and official link | Main use / typical input | What to check |
 | --- | --- | --- |
@@ -334,7 +334,7 @@ These are starting combinations, not a requirement to install every database. A 
 
 **Pathway presence is not pathway activity.** A KO, COG, or protein-family hit supports a functional hypothesis. Stronger interpretation requires sufficient sequence coverage, specificity, key pathway components, and genomic context. A pathway assembled from genes across the whole community does not demonstrate that one organism encodes the complete pathway.
 
-### 3. Soil carbon, nutrient, and redox functions 🌱
+### 3. Soil carbon, nutrient, and redox functions 
 
 | Resource and official link | Target | Interpretation for soil–plant studies |
 | --- | --- | --- |
@@ -346,7 +346,7 @@ These are starting combinations, not a requirement to install every database. A 
 
 **For a soil–plant project:** a useful candidate set is general protein annotation plus dbCAN and the cycle-specific resources relevant to the hypothesis. More databases do not provide independent confirmation when they share underlying sequences or annotations. Resolve conflicting assignments explicitly.
 
-### 4. Fungal references and genome quality 🍄
+### 4. Fungal references and genome quality 
 
 | Resource and official link | Main role | Important distinction |
 | --- | --- | --- |
@@ -356,7 +356,7 @@ These are starting combinations, not a requirement to install every database. A 
 
 For fungal contigs, use eukaryote-aware gene prediction where needed; do not assume an intron-free bacterial gene-calling workflow recovers fungal proteins correctly. The ITS/UNITE classifiers above serve marker-gene analysis and do not replace fungal whole-genome/protein references in shotgun analysis.
 
-### 5. Viruses, plasmids, and specialized traits 🧪
+### 5. Viruses, plasmids, and specialized traits 
 
 | Resource and official link | Main role / input | Interpretation |
 | --- | --- | --- |
@@ -370,7 +370,7 @@ For fungal contigs, use eukaryote-aware gene prediction where needed; do not ass
 
 **[MGnify](https://www.ebi.ac.uk/metagenomics/)** and **[JGI IMG/M](https://img.jgi.doe.gov/m/)** support discovery/exploration of environmental metagenomic data and analyses. They are portals containing multiple datasets/resources, not interchangeable classification indexes. When reusing sequences, keep study/assembly accessions, sample metadata, provenance, and applicable data-use terms. Consider overlap with your own study when constructing references or benchmarking.
 
-### Using these resources with anvi’o 💻
+### Using these resources with anvi’o 
 
 anvi’o is an analysis platform with version-specific database setup and annotation workflows. Its documented [COG setup](https://anvio.org/help/main/programs/anvi-setup-ncbi-cogs/) and [KEGG/KOfam setup](https://anvio.org/help/main/programs/anvi-setup-kegg-data/) prepare resources for downstream annotation and metabolism analysis. Follow documentation for the installed release; **database installation, gene annotation, and abundance estimation are separate steps**. External annotations require correctly matched gene identifiers and an appropriate import workflow.
 
@@ -385,7 +385,7 @@ anvi’o is an analysis platform with version-specific database setup and annota
 
 These are planning suggestions, not a benchmarked universal optimum. Do not equate read counts, gene counts, genome coverage, and cell abundance. Declare normalization methods and account for gene length, copy number, mapping ambiguity, genome completeness, and detection limits as applicable.
 
-### Database management and reproducibility 📋
+### Database management and reproducibility 
 
 For each resource, record: **name; release/date; official source URL; download date; checksum where provided; included/excluded taxa; taxonomy system; preprocessing/index-build settings; software version; model/score thresholds; and local location**. Separate immutable reference releases from temporary working files. Reuse one frozen reference build across samples intended for direct comparison.
 
