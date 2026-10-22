@@ -21,6 +21,7 @@ Reference resources for marker-gene analysis, with a curated primer catalogue fo
 - [Choosing primers for soil and plant samples](#choosing-primers-for-soil-and-plant-samples)
 - [Other markers in this repository](#other-markers-in-this-repository)
 - [Using primers with QIIME 2 resources](#using-primers-with-qiime-2-resources)
+- [Hackflex and DNA extraction for shotgun metagenomics](#hackflex-and-dna-extraction-for-shotgun-metagenomics)
 - [Database downloads](#database-downloads)
 - [References](#references)
 
@@ -182,6 +183,95 @@ These entries retain the additional marker information from the original README.
 5. **Check software compatibility.** Serialized scikit-learn classifiers can be version specific; confirm compatibility with the installed QIIME 2 environment. [[37](#ref-37)]
 6. **Trim actual assay sequences.** Match the oligonucleotides and adapter architecture used by the sequencing provider. Variable-length ITS data should not be forced into a single 16S-style fixed-length assumption.
 7. **Validate before biological interpretation.** Use suitable controls and examine host/non-target reads, unclassified sequences, and relevant reference coverage. High read counts or a high classification confidence threshold do not demonstrate biological accuracy.
+
+
+<a id="hackflex-and-dna-extraction-for-shotgun-metagenomics"></a>
+
+## 🧬 Hackflex and DNA extraction for shotgun metagenomics
+
+**Hackflex is a sequencing-library preparation method, not a DNA-extraction method.** Extraction releases and purifies DNA from the sample; library preparation converts that DNA into adapter-bearing fragments that can be sequenced. Shotgun metagenomics (sequencing DNA across the extracted community) differs from sequencing a targeted 16S or ITS amplicon.
+
+### Origin and published evidence
+
+**Gaio et al. (2022)** developed Hackflex at the University of Technology Sydney as a lower-cost modification of Nextera DNA Flex, now called Illumina DNA Prep. It uses diluted bead-linked transposomes (BLT; enzyme–adapter complexes attached to beads) and replacement reagents. The original work evaluated bacterial isolates spanning different GC contents [[38](#ref-38)].
+
+**Goldman et al. (2024)** evaluated Hackflex with a defined microbial DNA mixture and mouse-fecal metagenomes. Community signatures were recovered, but abundance biases remained. Lower template concentrations performed better in their mock-community experiment; the authors explicitly did **not** test soil or water [[39](#ref-39)]. These results support a soil pilot, rather than a claim of comprehensive validation for soil fungi, plant endophytes, rare taxa, or metagenome-assembled genomes (MAGs; genomes reconstructed from mixed-community sequence data).
+
+### Where Hackflex fits
+
+| Stage | Purpose | Output |
+| --- | --- | --- |
+| 1. Sampling and preservation | Define the compartment and limit changes after collection | Documented soil, rhizosphere, or plant sample |
+| 2. DNA extraction | Disrupt cells and remove sample/kit contaminants | Purified community DNA |
+| 3. Input quality control | Measure usable DNA quantity, purity, and integrity | DNA suitable for the chosen library protocol |
+| 4. Hackflex tagmentation | Fragment DNA and attach adapter sequences | Adapter-tagged DNA fragments |
+| 5. Library amplification and indexing | Amplify fragments and add sample-identifying indices | Indexed sequencing library |
+| 6. Cleanup, library QC, and pooling | Remove unwanted fragments and balance libraries | Sequencing-ready pool |
+| 7. Sequencing and analysis | Recover reads, remove contaminants/host reads, and answer the biological question | Taxonomic/functional profiles and, where supported, assemblies/MAGs |
+
+**No 515F/806R or ITS1/ITS2 marker-primer pair is used to target community DNA in ordinary shotgun library preparation.** Library PCR uses adapter/index primers. Hackflex does not replace DNA extraction, remove plant DNA, or measure microbial activity.
+
+### DNA extraction: recommendations for soil–plant studies
+
+The following are **planning recommendations**, not a single validated extraction SOP. Choose and document one kit/protocol version, and use its specified sample capacity and instrument settings. The enzyme dilution used for Hackflex is unrelated to the dilution of a soil lysate.
+
+| Decision | Recommended approach | Why it matters |
+| --- | --- | --- |
+| Define the compartment | Separate bulk soil, root-adhering rhizosphere, root surface, and internal tissue according to the study question | Washing or surface sterilization changes the community being sampled |
+| Choose extraction chemistry | Start with an inhibitor-removing environmental-DNA workflow for soil/rhizosphere; PowerSoil Pro is one candidate, not a universal best kit | Humic substances and co-extracted compounds can interfere with quantification and library enzymes |
+| Standardize sample input | Homogenize appropriately and record the mass entering each extraction; stay within kit capacity | More soil can increase inhibitors without increasing usable DNA |
+| Lyse the intended organisms | Pilot mechanical plus chemical lysis for the bacterial/fungal groups of interest | Insufficient disruption can miss resistant cells/spores; stronger disruption can increase DNA fragmentation |
+| Record bead beating | Record bead composition, instrument, setting, duration, and temperature management | Settings are not interchangeable between instruments or extraction matrices |
+| Remove inhibitors | Use the chosen protocol's inhibitor-removal and wash steps; assess cleanup on representative extracts | Repeated cleanup can also lose DNA and change recovered fragment distributions |
+| Elute compatibly | Use a validated low-salt eluent; assess EDTA and carryover from extraction | Carryover can impair tagmentation or PCR |
+| Include controls | Process extraction blanks, library blanks, and a suitable whole-cell mock community | A DNA-only standard tests library preparation, but does not test cell lysis or extraction bias |
+
+A soil benchmark compared extraction workflows across five soil types and found differences in yield, purity, fragment length, and community recovery. Its miniaturized Illumina DNA Prep workflow was **not the same protocol as Hackflex** [[40](#ref-40)]. QIAGEN describes PowerSoil Pro as combining mechanical/chemical disruption with inhibitor removal [[42](#ref-42)]. Select extraction conditions based on the samples and the downstream objective, rather than on yield alone.
+
+### Input DNA quality control
+
+| Check | Practical interpretation before Hackflex |
+| --- | --- |
+| **Double-stranded DNA concentration** | Quantify with a suitable fluorometric assay, such as Qubit dsDNA HS for low concentrations. Do not substitute NanoDrop concentration for a dsDNA-specific measurement. |
+| **Total DNA mass** | Calculate mass as concentration × volume added. Concentration alone is not the reaction input. Retain DNA for QC, repeats, and troubleshooting. |
+| **Purity** | Inspect absorbance where concentration permits reliable measurement. Illumina DNA Prep guidance gives A260/A280 around 1.8–2.0 and A260/A230 around 2.0–2.2; these are screening guides, not independently established Hackflex pass/fail thresholds. |
+| **Carryover** | Check for humic compounds, ethanol, detergents, phenol, salts, and EDTA. A good absorbance ratio does not prove that an extract is inhibitor-free. |
+| **Integrity** | Examine a gel or fragment-analysis trace. Optimize lysis for community recovery while avoiding unnecessary degradation; do not assume that the highest molecular weight gives the most representative extraction. |
+| **Plant DNA** | Qubit measures total dsDNA, including host DNA. A high yield from roots/leaves can therefore correspond to little microbial DNA. Estimate the host-read fraction in a pilot. |
+
+The quantification, purity, and carryover guidance above draws on the **parent Illumina DNA Prep workflow** [[41](#ref-41)]. Its input range and normalization behaviour should not automatically be transferred to diluted-transposome Hackflex reactions.
+
+### Published input values: examples, not universal specifications
+
+| Source | Reported condition | How to interpret it |
+| --- | --- | --- |
+| Original Hackflex [[38](#ref-38)] | **10 ng DNA in 10 µL**, with **1:50 BLT dilution** | A published starting condition; use the complete matching buffer, stopping, washing, amplification, and cleanup protocol |
+| Metagenomic evaluation [[39](#ref-39)] | Template concentrations from **0.15625 to 10 ng/µL**; better mock-community performance below 1 ng/µL in that experiment | This is template concentration, not a universal minimum input or a recommendation to dilute every soil extract to 0.15 ng/µL |
+
+The original standard Hackflex reaction used **55°C for 15 minutes** for tagmentation. Published variants differ in washing, polymerase, PCR cycling, and size selection [[38](#ref-38)]. Record the exact variant; do not assemble an SOP by combining isolated settings from different versions. The original study reported substantial **library-reagent** savings, with further savings in a simplified variant; this does not establish current prices or equivalent savings for extraction and sequencing [[38](#ref-38)].
+
+### Library preparation, QC, and the pilot
+
+1. **Normalize input for the selected variant.** Use the measured dsDNA concentration and prescribed input volume. Do not add more DNA simply because a soil extraction yielded more.
+2. **Tagment and stop according to that protocol.** Tagmentation simultaneously fragments DNA and adds adapter sequences. Use the specified BLT dilution and matched reaction chemistry.
+3. **Amplify/index with the specified reagents.** Record polymerase and cycle number. Excess amplification can increase duplication and representation bias; do not assume the original cycle count suits every input.
+4. **Clean and size-select as specified.** Inspect the resulting library trace for an appropriate distribution and short adapter products. Retain library size and concentration measurements; a visible PCR product alone is insufficient QC.
+5. **Quantify and pool individually.** For an initial soil Hackflex pilot, assess each library and pool according to the sequencing facility's requirements. Do not assume the parent kit's high-input self-normalization applies.
+6. **Evaluate sequence data before scaling.** Include distinct soil/plant matrices and low/high-yield extracts. Where feasible, prepare paired Hackflex and established comparator libraries from the same extracts. Compare host fraction, usable non-host reads, duplicates, contamination, taxonomic/functional consistency, and coverage—not yield alone.
+
+**For root and leaf metagenomes:** host depletion is a separate experimental choice and can introduce recovery bias. Removing plant reads computationally does not recover sequencing capacity already spent on them. If genome reconstruction is the objective, assess library complexity and target-genome coverage in the pilot; successful taxonomic profiling does not guarantee sufficient coverage for MAGs.
+
+**Short-read versus long-read objectives:** Hackflex is an Illumina-compatible fragmentation workflow. Preserve a separate DNA aliquot and use an appropriate extraction/library workflow if long-read sequencing is also planned.
+
+### What to record in the Methods
+
+Report the compartment; preservation; extracted sample mass; extraction kit/version and deviations; bead-beating conditions; elution; DNA quantity/purity/integrity; controls; exact Hackflex source and modifications; DNA mass and volume; BLT dilution; tagmentation conditions; polymerase/cycles; index scheme; cleanup/size-selection settings; library QC/pooling; sequencing platform/read configuration; and host/contaminant-filtering strategy. Report the pilot's observed performance rather than describing the method as unbiased.
+
+**Scope of downstream resources:** the marker-gene classifiers linked elsewhere in this README are not general-purpose shotgun-metagenome classifiers. Select reference databases and analysis tools appropriate to shotgun reads, genes, and/or genomes.
+
+
+<a id="database-downloads"></a>
+
 
 ## Database downloads
 
