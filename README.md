@@ -291,7 +291,7 @@ Report the compartment; preservation; extracted sample mass; extraction kit/vers
 
 <a id="shotgun-metagenomics-metag-databases"></a>
 
-## 🌍 Shotgun metagenomics (MetaG) databases
+## Shotgun metagenomics (MetaG) databases
 
 Shotgun metagenomics uses reference resources for different tasks: identifying organisms, annotating genes, reconstructing pathways, and evaluating assembled genomes. **There is no single database that does all of these equally well.** Select resources according to the biological question and the data being analysed.
 
@@ -366,7 +366,7 @@ For fungal contigs, use eukaryote-aware gene prediction where needed; do not ass
 | **[CARD](https://card.mcmaster.ca/)** | Curated antimicrobial-resistance determinants and detection models, commonly used with RGI | Interpret models and thresholds; sequence similarity alone does not establish phenotypic resistance or transfer risk. Include when AMR is part of the study. |
 | **[MIBiG](https://mibig.secondarymetabolites.org/)** | Experimentally characterized biosynthetic gene clusters and associated products | Useful references for comparing candidate clusters, for example in an antiSMASH workflow. Similarity to a known cluster does not prove production of its compound or a beneficial plant phenotype. |
 
-### 6. Environmental data discovery 🔎
+### 6. Environmental data discovery 
 
 **[MGnify](https://www.ebi.ac.uk/metagenomics/)** and **[JGI IMG/M](https://img.jgi.doe.gov/m/)** support discovery/exploration of environmental metagenomic data and analyses. They are portals containing multiple datasets/resources, not interchangeable classification indexes. When reusing sequences, keep study/assembly accessions, sample metadata, provenance, and applicable data-use terms. Consider overlap with your own study when constructing references or benchmarking.
 
