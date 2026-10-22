@@ -1,4 +1,4 @@
-# QIIME-Compatible Databases 🧬
+# QIIME-Compatible & MetaG Reference Databases 🧬
 
 <p align="center">
   <a href="#choosing-primers-for-soil-and-plant-samples"><img alt="Focus: soil–plant–microbe" src="https://img.shields.io/badge/Focus-Soil%20%E2%80%A2%20Plant%20%E2%80%A2%20Microbe-8FBC8F?style=flat-square"></a>
@@ -9,7 +9,9 @@
 </p>
 
 
-Reference resources for marker-gene analysis, with a curated primer catalogue for soil–plant–microbe research.
+Resources for soil–plant–microbe research: amplicon primers and QIIME 2 artifacts, Hackflex guidance, and a curated shotgun-metagenomics database guide.
+
+<a id="contents"></a>
 
 ## 🧭 Contents
 
@@ -22,8 +24,11 @@ Reference resources for marker-gene analysis, with a curated primer catalogue fo
 - [Other markers in this repository](#other-markers-in-this-repository)
 - [Using primers with QIIME 2 resources](#using-primers-with-qiime-2-resources)
 - [Hackflex and DNA extraction for shotgun metagenomics](#hackflex-and-dna-extraction-for-shotgun-metagenomics)
+- [Shotgun metagenomics (MetaG) databases](#shotgun-metagenomics-metag-databases)
 - [Database downloads](#database-downloads)
 - [References](#references)
+
+<a id="scope-and-sequence-conventions"></a>
 
 ## Scope and sequence conventions
 
@@ -48,6 +53,8 @@ Degenerate bases specify mixtures of nucleotides; inosine is a separate chemical
 | B | C/G/T | D | A/G/T |
 | H | A/C/T | V | A/C/G |
 | N | A/C/G/T | I | Inosine; not an IUPAC nucleotide-mixture code |
+
+<a id="16s-rrna-gene-primers"></a>
 
 ## 16S rRNA gene primers
 
@@ -89,6 +96,8 @@ These are the three mixture components, not three interchangeable spellings of o
 
 </details>
 
+<a id="fungal-its1-primers"></a>
+
 ## Fungal ITS1 primers
 
 **ITS1 is the spacer between 18S and 5.8S rRNA genes.** The reverse primer named **ITS2** binds in 5.8S and is commonly used to amplify **ITS1**. A primer's name does not identify the amplified spacer by itself.
@@ -103,6 +112,8 @@ These are the three mixture components, not three interchangeable spellings of o
 | **ITS1FI2 / 5.8S**, version shown | `GAACCWGCGGARGGATCA` | `CGCTGCGTTCTTCATCG` | Published soil/root fungal sequencing in silver-fir nursery systems. The reverse sequence differs from standard ITS2. [[19](#ref-19)] |
 
 Product lengths are taxon dependent. Check the expected distribution using appropriate reference sequences and the intended analysis workflow rather than assigning one universal ITS1 length.
+
+<a id="fungal-its2-primers"></a>
 
 ## Fungal ITS2 primers
 
@@ -122,6 +133,8 @@ Product lengths are taxon dependent. Check the expected distribution using appro
 
 Some published methods label the pair `GTGARTCATCGAATCTTTG` / `TCCTCCGCTTATTGATATGC` as “ITS1FI2/ITS2” [[26](#ref-26)]. **Those sequences correspond to fITS7/ITS4 and target ITS2**, whereas `GAACCWGCGGARGGATCA` / `GCTGCGTTCTTCATCGATGC` targets ITS1 [[18](#ref-18)]. Record sequences and binding sites when reconciling such reports; do not use the reported names alone to select trimming settings or infer the sequenced region.
 
+<a id="full-its-and-additional-primer-variants"></a>
+
 ## Full-ITS and additional primer variants
 
 ### Full ITS: ITS1–5.8S–ITS2
@@ -139,6 +152,8 @@ Full-ITS products are longer and highly variable. Use an appropriate long-read o
 - **ITS1Fngs:** shortened forward sequence `GGTCATTTAGAGGAAGTAA`; see the UNITE primer resource and the published ITS1Fngs/ITS2 sequencing workflow [[27](#ref-27), [29](#ref-29)].
 - **ITS4ngs:** a reported reverse binding sequence is `TCCTSCGCTTATTGATATGC`; versions with an additional 5′ T also occur. A gITS7/ITS4ngs rhizosphere application is documented in [[30](#ref-30)]. Record the full version used.
 - **ITS4ngsUni:** reverse sequence `CCTSCSCTTANTDATATGC`; used with other forward primers in broader assays, including pea-root studies [[31](#ref-31)]. The forward partner determines the amplified span; this is not an independently validated substitute in every ITS4-based pair.
+
+<a id="choosing-primers-for-soil-and-plant-samples"></a>
 
 ## Choosing primers for soil and plant samples
 
@@ -160,6 +175,8 @@ The following are **starting candidates for a pilot**, not universal rankings.
 
 **Interpretation.** Amplicon read proportions are not direct cell, biomass, or activity measurements. Marker-copy variation, extraction, primer matching, PCR competition, and length-dependent recovery affect the result. A spike-in can support absolute-abundance estimation only under validated assumptions; it does not correct every taxon-specific amplification bias.
 
+<a id="other-markers-in-this-repository"></a>
+
 ## Other markers in this repository
 
 These entries retain the additional marker information from the original README. They are **not a systematic validation catalogue for functional-gene or AMF assays**. Confirm the original assay source, specificity, PCR conditions, and reference coverage before use. The nifH1/nifH2 labels and the NS31 label below correct naming issues in the original table.
@@ -171,6 +188,8 @@ These entries retain the additional marker information from the original README.
 | **AMF 18S, original entry** | NS31: `TTGGAGGGCAAGTCTGGTGCC` | AMDGR: `CCCAACTATCCCTATTAATCAT` | Forward sequence is NS31, not “AMDGR_NS31” [[35](#ref-35)]. This row preserves the supplied pairing; it is not endorsed here as equivalent to AMV4.5NF/AMDGR. |
 | **AMF 18S, published alternative** | AMV4.5NF: `AAGCTCGTAGTTGAATTTCG` | AMDGR: `CCCAACTATCCCTATTAATCAT` | Successfully sequenced from roots and rhizosphere soil. [[33](#ref-33)] |
 | **nosZ** | nosZ1mod_f: `WCSYTSTTCMTSGAYAGCCAG` | nosZmod_R: `ATRTCGATSARCTGVKCRTTYTC` | Names/sequences retained from the original README; clade coverage and assay provenance have not been independently established here. |
+
+<a id="using-primers-with-qiime-2-resources"></a>
 
 ## Using primers with QIIME 2 resources
 
@@ -270,6 +289,109 @@ Report the compartment; preservation; extracted sample mass; extraction kit/vers
 **Scope of downstream resources:** the marker-gene classifiers linked elsewhere in this README are not general-purpose shotgun-metagenome classifiers. Select reference databases and analysis tools appropriate to shotgun reads, genes, and/or genomes.
 
 
+<a id="shotgun-metagenomics-metag-databases"></a>
+
+## 🌍 Shotgun metagenomics (MetaG) databases
+
+Shotgun metagenomics uses reference resources for different tasks: identifying organisms, annotating genes, reconstructing pathways, and evaluating assembled genomes. **There is no single database that does all of these equally well.** Select resources according to the biological question and the data being analysed.
+
+The links below point to **external reference resources and their official documentation**. These are not additional QIIME 2 classifiers hosted by this repository, and a downloadable sequence collection is not necessarily a ready-to-run index. Software and database releases must be compatible.
+
+### Start with the question
+
+| Question | Data to analyse | Starting resources |
+| --- | --- | --- |
+| Which organisms are represented? | Quality-controlled, host-filtered reads | A documented RefSeq/other reference build for Kraken 2, or the version-matched MetaPhlAn marker database |
+| What genes and pathways are encoded? | Predicted proteins from contigs/MAGs, or reads with a dedicated functional-profiling workflow | eggNOG, KOfam/KEGG, UniRef; COG and Pfam/InterPro as complementary resources |
+| What carbon/nutrient/redox functions are represented? | Protein sequences and, where possible, genomic context | dbCAN, NCycDB, SCycDB, PCyCDB, and FeGenie reference models, selected by the hypothesis |
+| What are the recovered bacterial/archaeal genomes? | Genome bins/MAGs | GTDB with a compatible GTDB-Tk release; separate genome-quality assessment |
+| What about fungi? | Fungal reads/contigs and eukaryote-aware protein predictions | MycoCosm/appropriate fungal genome references; lineage-appropriate BUSCO datasets for assembly assessment |
+| What viruses/plasmids are present in assemblies? | Assembled contigs | geNomad's database; CheckV reference database for viral quality assessment; IMG/VR for reference comparisons |
+
+These are starting combinations, not a requirement to install every database. A **MAG** is a metagenome-assembled genome; a **contig** is a contiguous assembled DNA sequence; an **HMM** is a statistical sequence-family model used to detect related proteins.
+
+### 1. Taxonomy and genome references 🦠
+
+| Resource and official link | What it contains / typical input | Software relationship and limitations |
+| --- | --- | --- |
+| **[NCBI RefSeq](https://www.ncbi.nlm.nih.gov/refseq/)** | Reference genomes, transcripts, and proteins across multiple organism groups; useful for curated reference selection and host genomes | A source collection. Kraken 2 or an aligner requires its own prepared index; record the accessions and included organism groups. RefSeq is not synonymous with a particular Kraken database. |
+| **[Kraken 2 / Bracken reference indexes](https://benlangmead.github.io/aws-indexes/k2)** | Prepared indexes for read classification and abundance estimation, with different source collections and taxonomic coverage | Kraken 2 and Bracken are **tools**. Choose a specific dated index and inspect its library report. A bacterial/archaeal build does not establish fungal or viral coverage. Bracken files must match the Kraken build and the selected read-length model. See the [Kraken 2 manual](https://github.com/DerrickWood/kraken2/wiki/Manual). |
+| **[MetaPhlAn marker database](https://github.com/biobakery/MetaPhlAn/wiki)** | Marker sequences used to estimate taxonomic composition from shotgun reads | Install the database prescribed for the MetaPhlAn version. This is a marker-based profiler, not a whole-genome classifier. Assess representation of the intended environmental and eukaryotic groups. |
+| **[Genome Taxonomy Database (GTDB)](https://gtdb.ecogenomic.org/)** | Genome-based reference taxonomy for **Bacteria and Archaea** | Used by [GTDB-Tk](https://ecogenomics.github.io/GTDBTk/) to classify genomes/MAGs. GTDB-Tk is not a raw-read profiler, and GTDB does not provide fungal or viral taxonomy. A Kraken index derived from GTDB is a separate resource. |
+
+**NCBI and GTDB names can differ.** Keep the taxonomy source and release attached to every result. Do not merge tables by species-name strings alone. Reference-dependent profiles also omit or incompletely resolve organisms lacking suitable reference representation; an unclassified read is not evidence that no organism was present.
+
+### 2. General functions and pathways 🧬
+
+| Resource and official link | Main use / typical input | What to check |
+| --- | --- | --- |
+| **[eggNOG / eggNOG-mapper](https://github.com/eggnogdb/eggnog-mapper)** | Orthology-based annotation of predicted proteins; transfers supported functional terms from related gene groups | eggNOG is the reference resource; eggNOG-mapper is the annotation software. Match releases and taxonomic scope. An orthology assignment is a prediction, not an enzyme assay. |
+| **[UniRef](https://www.uniprot.org/help/uniref)** | Clustered protein references at different sequence-similarity resolutions, including UniRef90 and UniRef50 | Useful for protein/translated-read search with appropriate tools. Specify the cluster resolution and release; a clustered match is not automatically a unique gene, species, or exact biochemical function. |
+| **[KOfam / KofamKOALA](https://www.genome.jp/tools/kofamkoala/)** and **[KEGG](https://www.kegg.jp/)** | KOfam protein-family HMMs assign KEGG Ortholog identifiers (KOs); KEGG links KOs to modules/pathways | Retain HMM scores, model thresholds, and module definitions. KOfam is not a complete copy of every KEGG dataset. Check [KEGG access and reuse terms](https://www.kegg.jp/kegg/legal.html) for the required data and use. |
+| **[NCBI COG](https://www.ncbi.nlm.nih.gov/research/cog/)** | Orthologous protein groups and functional categories for prokaryotes | Useful complementary annotation for bacterial/archaeal proteins. Broad functional categories are not complete pathway reconstructions. |
+| **[Pfam / InterPro](https://www.ebi.ac.uk/interpro/)** | Protein-family/domain annotation; Pfam provides profile HMMs, while InterPro integrates multiple signature resources | A domain is part of a protein and may occur in proteins with different functions. Inspect architecture and coverage; document the component database release. |
+| **[HUMAnN reference bundles](https://github.com/biobakery/humann)** | ChocoPhlAn nucleotide references, UniRef protein-search databases, and associated mappings for read-based functional profiling | HUMAnN is the tool, not the database. Use its supported bundles rather than assuming any downloaded UniRef FASTA or MetaPhlAn database is interchangeable. Evaluate environmental coverage and the unmapped/unintegrated fractions. |
+
+**Pathway presence is not pathway activity.** A KO, COG, or protein-family hit supports a functional hypothesis. Stronger interpretation requires sufficient sequence coverage, specificity, key pathway components, and genomic context. A pathway assembled from genes across the whole community does not demonstrate that one organism encodes the complete pathway.
+
+### 3. Soil carbon, nutrient, and redox functions 🌱
+
+| Resource and official link | Target | Interpretation for soil–plant studies |
+| --- | --- | --- |
+| **[dbCAN resources](https://run-dbcan.readthedocs.io/en/latest/user_guide/prepare_the_database.html)** | Carbohydrate-active enzyme families/subfamilies and related gene-cluster annotation | Useful for carbon-depolymerization and carbohydrate-utilization hypotheses. Match the databases to the run_dbcan version. Family detection alone does not establish a particular substrate or degradation rate. |
+| **[NCycDB](https://github.com/qichao1984/NCyc)** | Curated nitrogen-cycle gene-family references | Complement general annotation for N-cycling questions. Resolve related homologs and inspect gene context before assigning nitrification, denitrification, or nitrogen-fixation potential. See the [primary paper](https://doi.org/10.1093/bioinformatics/bty741). |
+| **[SCycDB](https://github.com/qichao1984/SCycDB)** | Sulfur-cycle gene-family references | Supports targeted sulfur-metabolism annotation. Similar genes can participate in different pathways; inspect accompanying genes and pathway context. [Primary paper](https://doi.org/10.1111/1755-0998.13306). |
+| **[PCyCDB](https://github.com/ZengJiaxiong/Phosphorus-cycling-database)** | Curated phosphorus-cycling protein references and category mappings | Useful for P acquisition, transport, regulation, and transformation hypotheses. P-related gene presence does not directly quantify plant-available P or phosphorus-solubilizing activity. |
+| **[FeGenie reference HMMs](https://github.com/Arkadiy-Garber/FeGenie)** | Iron-related genes and gene neighbourhoods in genomes/metagenome assemblies | FeGenie is a tool plus reference models. Distinguish iron acquisition/storage/homeostasis from iron oxidation/reduction. Not every iron-related gene implies a respiratory redox process. [Primary paper](https://doi.org/10.3389/fmicb.2020.00037). |
+
+**For a soil–plant project:** a useful candidate set is general protein annotation plus dbCAN and the cycle-specific resources relevant to the hypothesis. More databases do not provide independent confirmation when they share underlying sequences or annotations. Resolve conflicting assignments explicitly.
+
+### 4. Fungal references and genome quality 🍄
+
+| Resource and official link | Main role | Important distinction |
+| --- | --- | --- |
+| **[JGI MycoCosm](https://mycocosm.jgi.doe.gov/mycocosm/home)** | Fungal genome/proteome discovery and comparative analysis; source of selected fungal references | A portal and reference collection, not one universal prebuilt fungal shotgun index. Select the relevant releases/assemblies and follow JGI access and data-use policies. |
+| **[BUSCO lineage datasets](https://busco.ezlab.org/)** | Conserved orthologue sets for assessing genome/proteome completeness, including fungal lineages | BUSCO is an assessment tool with lineage-specific references. Choose the appropriate lineage and gene-prediction mode. Duplicated markers can reflect biology, assembly duplication, or contamination; they are not a universal contamination percentage. |
+| **[CheckM2 database](https://github.com/chklovski/CheckM2)** | Reference data used by CheckM2 to estimate **bacterial/archaeal** genome-bin completeness and contamination | A genome-quality resource, not a taxonomic profiler or a general fungal-MAG quality assessment method. Use the database version compatible with the software. |
+
+For fungal contigs, use eukaryote-aware gene prediction where needed; do not assume an intron-free bacterial gene-calling workflow recovers fungal proteins correctly. The ITS/UNITE classifiers above serve marker-gene analysis and do not replace fungal whole-genome/protein references in shotgun analysis.
+
+### 5. Viruses, plasmids, and specialized traits 🧪
+
+| Resource and official link | Main role / input | Interpretation |
+| --- | --- | --- |
+| **[geNomad database](https://portal.nersc.gov/genomad/quickstart.html)** | Models/markers used by geNomad to identify viral and plasmid sequences in assemblies | Identify candidate mobile elements; use the matching database and software release. It is not a replacement for viral quality assessment or experimental host assignment. |
+| **[CheckV database](https://portal.nersc.gov/CheckV/)** | Reference data for evaluating candidate viral genomes; use with [CheckV](https://pypi.org/project/checkv/) | Assesses viral sequence quality and host contamination. Run viral detection separately; a CheckV assessment does not by itself establish a sequence's host or ecological function. |
+| **[IMG/VR](https://img.jgi.doe.gov/vr/)** | Viral genome/reference discovery and comparison | A viral reference resource/portal, not the same object as a geNomad or CheckV database. Record the selected collection and release. |
+| **[CARD](https://card.mcmaster.ca/)** | Curated antimicrobial-resistance determinants and detection models, commonly used with RGI | Interpret models and thresholds; sequence similarity alone does not establish phenotypic resistance or transfer risk. Include when AMR is part of the study. |
+| **[MIBiG](https://mibig.secondarymetabolites.org/)** | Experimentally characterized biosynthetic gene clusters and associated products | Useful references for comparing candidate clusters, for example in an antiSMASH workflow. Similarity to a known cluster does not prove production of its compound or a beneficial plant phenotype. |
+
+### 6. Environmental data discovery 🔎
+
+**[MGnify](https://www.ebi.ac.uk/metagenomics/)** and **[JGI IMG/M](https://img.jgi.doe.gov/m/)** support discovery/exploration of environmental metagenomic data and analyses. They are portals containing multiple datasets/resources, not interchangeable classification indexes. When reusing sequences, keep study/assembly accessions, sample metadata, provenance, and applicable data-use terms. Consider overlap with your own study when constructing references or benchmarking.
+
+### Using these resources with anvi’o 💻
+
+anvi’o is an analysis platform with version-specific database setup and annotation workflows. Its documented [COG setup](https://anvio.org/help/main/programs/anvi-setup-ncbi-cogs/) and [KEGG/KOfam setup](https://anvio.org/help/main/programs/anvi-setup-kegg-data/) prepare resources for downstream annotation and metabolism analysis. Follow documentation for the installed release; **database installation, gene annotation, and abundance estimation are separate steps**. External annotations require correctly matched gene identifiers and an appropriate import workflow.
+
+### Choose a practical starting set
+
+| Project objective | Suggested starting set | Add only when needed |
+| --- | --- | --- |
+| Read-based community survey | One documented taxonomic index or marker database, with a host-filtering reference appropriate to the plant | A compatible HUMAnN resource set for a planned read-based functional workflow |
+| Assembly-based soil functional study | eggNOG or KOfam/general annotation, plus dbCAN and the nutrient-cycle references central to the question | Additional specialist databases after evaluating the first results |
+| Bacterial/archaeal MAG study | GTDB/GTDB-Tk, a genome-quality resource, and functional annotations | Specialist trait models and targeted phylogenetic checks |
+| Fungal or viral study | Domain-appropriate reference sets and gene/sequence assessment | General prokaryotic resources only for the bacterial/archaeal part of the analysis |
+
+These are planning suggestions, not a benchmarked universal optimum. Do not equate read counts, gene counts, genome coverage, and cell abundance. Declare normalization methods and account for gene length, copy number, mapping ambiguity, genome completeness, and detection limits as applicable.
+
+### Database management and reproducibility 📋
+
+For each resource, record: **name; release/date; official source URL; download date; checksum where provided; included/excluded taxa; taxonomy system; preprocessing/index-build settings; software version; model/score thresholds; and local location**. Separate immutable reference releases from temporary working files. Reuse one frozen reference build across samples intended for direct comparison.
+
+Use the download/setup instructions supplied with the selected software. Protein FASTA files, profile-HMM collections, Bowtie indexes, Kraken indexes, and QIIME 2 artifacts are different formats. **Do not rename one format to make it appear compatible with another tool.** Check access/reuse terms before redistribution; linking to the provider is preferable to bundling large reference datasets in this repository. Database disk/RAM requirements depend on the exact release and build—check them before choosing an HPC job configuration.
+
+
 <a id="database-downloads"></a>
 
 
@@ -277,6 +399,8 @@ Report the compartment; preservation; extracted sample mass; extraction kit/vers
 
 The following sections retain the repository's download links. Consult each artifact's provenance before selecting a resource for a particular marker, primer pair, or software environment.
 
+
+<a id="18s-qiime-compatible-database"></a>
 
 ## 18S QIIME-Compatible Database
 
@@ -289,6 +413,8 @@ The 18S QIIME-compatible database is designed for analyzing eukaryotic microbial
 
 ---
 
+<a id="16s-qiime-compatible-database"></a>
+
 ## 16S QIIME-Compatible Database
 
 The 16S QIIME-compatible database is tailored for exploring bacterial and archaeal communities, utilizing the 16S ribosomal RNA (rRNA) gene as a marker. The database includes:
@@ -299,6 +425,8 @@ The 16S QIIME-compatible database is tailored for exploring bacterial and archae
 [Download 16S Database](https://app.box.com/s/445pwsz06zvh9y7kpepp1phydu3e5heg) | [Alternative Link](https://drive.google.com/drive/folders/1mV6ijpE0wCZHfDMdqlZ0U0keDJSMQsgA?usp=sharing)
 
 ---
+
+<a id="its-qiime-compatible-database"></a>
 
 ## ITS QIIME-Compatible Database
 
@@ -320,6 +448,8 @@ The ITS QIIME-compatible database is developed for analyzing fungal communities 
 
 ---
 
+<a id="nifh-qiime-compatible-database"></a>
+
 ## nifH QIIME-Compatible Database
 
 The nifH QIIME-compatible database supports analysis of nitrogenase reductase (nifH) gene sequences associated with diazotrophs (organisms capable of nitrogen fixation). Detection of a nifH-like sequence alone does not establish nitrogen-fixing activity; homolog identity and reference coverage require evaluation. The database includes:
@@ -330,6 +460,8 @@ The nifH QIIME-compatible database supports analysis of nitrogenase reductase (n
 [Download nifH Database](https://app.box.com/s/vg2jgh6b9beo1zlf07z8ijhr6mx13k2m) | [Alternative Link](https://drive.google.com/drive/folders/1mCp57YTcM17VhVGexGtV4d0C19W_bGqm?usp=sharing)
 
 ---
+
+<a id="acds-qiime-compatible-database"></a>
 
 ## acdS QIIME-Compatible Database
 
@@ -342,6 +474,8 @@ The acdS QIIME-compatible database targets sequences of the gene encoding 1-amin
 
 ---
 
+<a id="eukaryota-qiime-compatible-database"></a>
+
 ## Eukaryota QIIME-Compatible Database
 
 The Eukaryota QIIME-compatible database is tailored for analyzing eukaryotic communities, utilizing various gene markers such as ITS & 18S rRNA. The database includes:
@@ -353,6 +487,8 @@ The Eukaryota QIIME-compatible database is tailored for analyzing eukaryotic com
 
 ---
 
+<a id="nosz-qiime-compatible-database"></a>
+
 ## nosZ QIIME-Compatible Database
 
 The nosZ QIIME-compatible database targets the gene encoding nitrous oxide reductase, which catalyses reduction of N₂O to N₂. Organisms carrying nosZ need not possess a complete denitrification pathway; check representation of nosZ clades I and II in the reference resource. The database includes:
@@ -363,6 +499,8 @@ The nosZ QIIME-compatible database targets the gene encoding nitrous oxide reduc
 [Download nosZ Database](https://app.box.com/s/vuvu76p9gv29m46q45nx8maoj5j3fvfs) | [Alternative Link](https://drive.google.com/drive/folders/12DSESzzPDJYWqcqQDXH0iQxF4OZOezli?usp=drive_link)
 
 ---
+
+<a id="references"></a>
 
 ## References
 
@@ -406,6 +544,12 @@ Numbers in the catalogue identify sequence sources, experimental evaluations, or
 36. <a id="ref-36"></a>**QIIME 2.** [Training feature classifiers with q2-feature-classifier](https://docs.qiime2.org/2024.10/tutorials/feature-classifier/). Versioned guidance, including the fungal ITS note; consult the [current plugin documentation](https://amplicon-docs.qiime2.org/en/latest/references/plugins/feature-classifier/) for current interfaces.
 37. <a id="ref-37"></a>**QIIME 2.** [Data resources](https://library.qiime2.org/data-resources). Region-specific/full-length classifier considerations and software compatibility.
 
+
+38. <a id="ref-38"></a>**Gaio et al. (2022).** Hackflex: low-cost, high-throughput, Illumina Nextera Flex library construction. [doi:10.1099/mgen.0.000744](https://doi.org/10.1099/mgen.0.000744). Consult the complete methods and supplementary protocol for reagent recipes and variant-specific instructions.
+39. <a id="ref-39"></a>**Goldman et al. (2024).** Hackflex library preparation enables low-cost metagenomic profiling. [doi:10.1093/ismeco/ycae075](https://doi.org/10.1093/ismeco/ycae075). Mock-community and mouse-fecal evaluation; soil/water were not tested.
+40. <a id="ref-40"></a>**Soil workflow benchmark (2024).** High-throughput DNA extraction and cost-effective miniaturized metagenome and amplicon library preparation of soil samples for DNA sequencing. [doi:10.1371/journal.pone.0301446](https://doi.org/10.1371/journal.pone.0301446). A distinct miniaturized Illumina DNA Prep workflow, not a direct validation of Hackflex.
+41. <a id="ref-41"></a>**Illumina.** [Sample Input for Illumina DNA Prep, (M) Tagmentation Library Preparation Kit](https://knowledge.illumina.com/library-preparation/dna-library-prep/library-preparation-dna-library-prep-faq-list/000001262). Parent-workflow guidance, not certification of Hackflex modifications.
+42. <a id="ref-42"></a>**QIAGEN.** [DNeasy PowerSoil Pro Kit](https://www.qiagen.com/de-ga/products/discovery-and-translational-research/dna-rna-purification/dna-purification/microbial-dna/dneasy-powersoil-pro-kit). Consult the handbook supplied for the exact kit version and extraction format.
 
 ---
 
