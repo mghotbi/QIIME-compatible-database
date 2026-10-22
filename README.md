@@ -2,11 +2,7 @@
 
 <p align="center">
   <a href="#choosing-primers-for-soil-and-plant-samples"><img alt="Focus: soil–plant–microbe" src="https://img.shields.io/badge/Focus-Soil%20%E2%80%A2%20Plant%20%E2%80%A2%20Microbe-8FBC8F?style=flat-square"></a>
-  <a href="#16s-rrna-gene-primers"><img alt="Marker: 16S rRNA gene" src="https://img.shields.io/badge/Marker-16S-89CFF0?style=flat-square"></a>
-  <a href="#fungal-its1-primers"><img alt="Marker: fungal ITS1" src="https://img.shields.io/badge/Marker-ITS1-C3B1E1?style=flat-square"></a>
-  <a href="#fungal-its2-primers"><img alt="Marker: fungal ITS2" src="https://img.shields.io/badge/Marker-ITS2-F4B6C2?style=flat-square"></a>
   <a href="#database-downloads"><img alt="Resources: QIIME 2 artifacts" src="https://img.shields.io/badge/Resources-QIIME%202-96D6CF?style=flat-square"></a>
-  <a href="#references"><img alt="References: linked literature" src="https://img.shields.io/badge/References-Linked%20literature-F4D58D?style=flat-square"></a>
   <a href="https://creativecommons.org/licenses/by/4.0/"><img alt="License: CC BY 4.0" src="https://img.shields.io/badge/License-CC%20BY%204.0-D6D6E7?style=flat-square"></a>
   <a href="https://earthmicrobiome.ucsd.edu/"><img alt="Earth Microbiome Project: website" src="https://img.shields.io/badge/Earth%20Microbiome%20Project-Explore-7FB685?style=flat-square"></a>
   <a href="https://earthmicrobiome.ucsd.edu/protocols-and-standards/16s/"><img alt="EMP: 16S protocol reference" src="https://img.shields.io/badge/EMP-16S%20protocol-89CFF0?style=flat-square"></a>
